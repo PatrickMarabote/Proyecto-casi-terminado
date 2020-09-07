@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+<div class="error" align="center">
+{% if error %}
+
+<br>
+{{ error }}
+
+{% endif %}
+</div>
+
+<div class="Producto">
+<h1> Product </h1>
+<br>
+<img class="img" src="{% static 'image/icono.jpg' %}" width="160">
+</div>
+
+
+<br>
+<br>
+
+<form class="Form_correcto" method="POST" action="{% url 'create' %}" enctype="multipart/form-data">
+{% csrf_token %}
+
+
+<label for="Titulo">Ingrese el titulo:</label>	
+<input type="text" placeholder="Escribe tu titulo" size="15" maxlength="30" id="Titulo" name="title">
+
+<label for="Body">Escribe una descripcion:</label>
+<input type="textbox" placeholder="Escribe una descripcion" size="15" maxlength="100" id="Body" name="body">
+
+<label for="Url">Escribe la URL:</label>
+<input type="text" placeholder="Escribe la URL" size="15" maxlength="1000" id="Body" name="url">
+
+
+<label for="Image">Su imagen Aqui:</label>
+<input type="file"  name="image">
+
+<input type="submit" value="Agregar Pruducto!">
+</form>
+
+<br>
+<br>
+<br>
+
+
+{% endblock %}

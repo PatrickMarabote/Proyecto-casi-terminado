@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="imagform">
+<img class="img" src="{% static 'image/logo.jpg' %}"  width="90"><h1> Sign Up!</h1> 
+</div>
+
+
+<div class="error" align="center">
+{% if error %}
+
+<br>
+{{ error }}
+
+{% endif %}
+</div>
+
+
+
+<form class="Form_correcto" method="POST" action="{% url 'signup' %}">
+{% csrf_token %}
+
+<label for="nombre">Ingrese su nombre:</label>	
+<input type="text" placeholder="Escribe tu nombre" size="15" maxlength="30" id="nombre" name="username">
+
+<label for="Contraseña">Escriba su Contraseña:</label>
+<input type="password" placeholder="Escribe tu Contraseña" size="15" maxlength="30" id="contraseña" name="password1">
+
+
+<label for="CONFIRMA">Repita su contraseña:</label>
+<input type="password" placeholder="Repita su contraseña" size="15" maxlength="30" id="CONFIRMA" name="password2">
+
+<input type="submit" value="Sing Up!">
+</form>
+
+<br>
+<br>
+<br>
+
+
+
+
+{% endblock %}

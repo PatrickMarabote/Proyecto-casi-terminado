@@ -1,0 +1,378 @@
+
+.titulo{
+	background: #5E5C53;
+	font-size: 20px;
+	opacity: 90%;
+	text-align: center;
+	padding: 12px 100px;
+	letter-spacing: 7px;
+	filter: drop-shadow(0px 0px 2px);
+	transition-property:all;
+	border-radius: 10px;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+	
+}
+
+
+.titulo:hover{
+	color: #F8FAF3;
+	opacity: 75%;
+	filter: drop-shadow(0px 0px 2px);
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+
+
+}
+
+
+.Texto_princial {
+	text-align: center;
+	font-weight: normal;
+	padding: 0.5px;
+	font-family:Verdana,  Geneva, sans-serif;
+	opacity: 75%;
+
+}
+
+
+
+
+.Contenedor {
+	left: 15%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	filter: drop-shadow(0px 0px 2px);
+
+
+}
+
+.img {
+	position: relative;
+	display: inline-flex;	
+	border-radius: 10px;
+	filter: drop-shadow(10px 10px 12px gray);
+
+}
+
+.uno a {
+	text-decoration: none;
+	font-size: 11px;
+	color:#fff;
+	font-weight: bold;
+	filter: drop-shadow(2px 2px 6px gray);
+} 
+
+
+
+.dos a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 11px;
+	font-weight: bold;
+	filter: drop-shadow(2px 2px 6px gray);
+} 
+
+.tres a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 11px;
+	font-weight: bold;
+	filter: drop-shadow(2px 2px 6px gray);
+} 
+.cuatro a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 11px;
+	font-weight: bold;
+	filter: drop-shadow(2px 2px 6px gray);
+}
+
+.Agregar_producto a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 11px;
+	font-weight: bold;
+	filter: drop-shadow(2px 2px 6px gray);
+
+} 
+
+.Login a {
+	color: #4A88F4 ;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	
+} 
+.Sign a {
+	color: #4A88F4;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	
+} 
+
+.uno {
+	position: absolute;
+	color:#fff;
+	text-decoration: none;
+	top: 30px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 0px 20px; 
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	filter: drop-shadow(0px 0px 1px gray);
+	left: 5%;
+	display: inline-block;
+}
+
+	
+.dos {
+	position: absolute;
+	color:#fff;
+	text-decoration: none;
+	top: 30px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	filter: drop-shadow(0px 0px 1px gray);
+	left: 15%;
+	display: inline-block;
+}
+.tres {
+	position: absolute;
+	color:#fff;
+	text-decoration: none;
+	top: 30px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	filter: drop-shadow(0px 0px 1px gray);
+	left: 27%;
+	display: inline-block;
+}
+.cuatro {
+	position: absolute;
+	color:#fff;
+	text-decoration: none;
+	top: 30px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	filter: drop-shadow(0px 0px 1px gray);
+	left: 70%;
+	display: inline-block;
+}
+
+.Agregar_producto{
+	position: absolute;
+	color:#fff;
+	text-decoration: none;
+	top: 30px;
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	filter: drop-shadow(0px 0px 1px gray);
+	left: 76%;
+	display: inline-block;
+}
+
+.Login{
+	position: absolute;
+	color:#1668C4;
+	text-decoration: none;
+	top: 30px;
+	padding: 0px 20px;
+	font-weight: bolder;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	left: 75%;
+	display: inline-block;
+}
+
+
+.Sign{
+	position: absolute;
+	color:#1668C4;
+	text-decoration: none;
+	top: 30px;
+	font-size: 15px;
+	padding: 0px 20px;
+	font-weight: bolder;
+	font-weight:bold;
+	font-style: italic;
+	font-family:Verdana,  Geneva, sans-serif;
+	left: 85%;
+	display: inline-block;
+}
+
+
+a:hover {
+	color: #fff;
+	border: none;
+	font-size: 14px;
+}
+
+.head{
+	text-align: center;
+
+}
+
+.cuerpo {
+	font-family: Verdana,  Geneva, sans-serif;
+	opacity: 80%;
+	text-align: center;
+}
+
+
+
+.Formulario{
+	display: inline-block;
+}
+
+
+.Form_correcto{
+	position: relative;
+	left: 35%;
+	opacity: 75%;
+	width:25%;
+	display: inline-block;
+
+}
+
+label{
+font-size: 12px;
+display: block;
+width: 100%;
+margin: 2px;
+border-radius: 4px;
+font-family: Verdana;
+
+
+}
+
+input, textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	transition-property:all ;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+	
+}
+
+
+input:hover{
+	background: #28292B;
+	color: #F8FAF3;
+	border-radius: 5px;
+	filter: drop-shadow(0px 0px 2px);
+	transition-property: all ;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+
+textarea{
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+	border-radius: 5px;
+}
+
+
+input[type="submit"] {
+	margin-bottom: 0;
+	background: #1668C4;
+	color: #fff;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #4A88F4;
+	cursor: pointer;
+
+}
+
+h1 {
+	font-family: :Verdana;
+	letter-spacing: 7px;
+	display: inline-block;
+	left: 1%;
+	position: relative;
+	color: #3F8EB4;
+	text-shadow: 0px 0px 3px;
+}
+
+.imagform{
+text-align: center;
+vertical-align: middle;
+
+}
+
+.error {
+	opacity: 70%;
+	font-family: Verdana;
+}
+
+.ultimo {
+	position: relative;
+	text-align: center;
+	opacity: 75%;
+	left: 33%;
+	display: inline-block;
+	background:#3FA7DB;
+	padding: 3px 10px;
+	margin-bottom: 4px;
+	letter-spacing: 7px;
+	transition-property:all;
+	border-radius: 10px;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.ultimo:hover {
+	text-align: center;
+	opacity: 75%;
+	display: inline-block;
+	left: 33%;
+	background: #33596C;
+	margin-bottom: 4px;
+	letter-spacing: 7px;
+	transition-property:all;
+	border-radius: 10px;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+
+}
+
+.Producto {
+display: inline-block;
+position: absolute;
+margin: 5%;
+padding: 3%;
+left:8%;
+top:17%;
+border:15% outset #ccc;
+
+}

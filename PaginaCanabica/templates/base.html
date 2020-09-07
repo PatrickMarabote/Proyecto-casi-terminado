@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Pagina Canabica</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/estilo1.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}">
+</head>
+
+<body>
+
+<br>
+
+<div class="titulo">
+<p> Canabis.UY </P>
+	<div class="uno"> <a href="{% url 'home' %}"> Inicio</a></div>
+	<div class="dos"> <a href="#"> Nosotros</a></div>
+	<div class="tres"> <a href="#"> Imagenes</a></div>
+
+
+
+	{% if user.is_authenticated %}
+	<div class="Agregar_producto"> <a href="{% url 'create' %}"> <span class="oi oi-plus"></span></a></div>
+	<div class="cuatro"> <a href="javascript:{document.getElementById('logout').submit()}" onclick=""> Logout</a></div>
+	<form id="logout" method="POST" action="{%url 'logout' %}">
+		{% csrf_token %}
+		<input type="hidden" />
+
+	</form>
+
+
+	{% else %}
+
+	<div class="Login"> <a href="{% url 'login' %}"> Iniciar</a></div>
+	<div class="Sign"> <a href="{% url 'signup' %}"> Registrarse</a></div>
+
+	{% endif %}
+</div>
+	
+
+<br>
+
+
+
+
+
+{% block content %}
+
+<div class="Contenedor">
+	<img class="img" src="{% static 'image/Semilla.jpg' %}"  width="1100">
+	
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="cuerpo">
+
+<p> hola esto es los topicos </p>
+
+
+<p> rpimera prueba con clases en Css ahora si estoy prestsando atencion. </p>
+<br>
+
+
+<p> Si quieres ir a google por favor da click en el sigiente enlce <a href="https://www.google.com.mx/?hl=es-419" class="google"> Google</a></p>
+
+<br>
+</div>
+{% endblock %}
+
+<div class="ultimo">
+<footer> Pagina Canabica 2020 Proyect Bios © </footer>
+</div>
+
+
+
+</body>
+</html>
