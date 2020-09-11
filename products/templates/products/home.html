@@ -1,29 +1,68 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/estilo1.css' %}">
 
 {% block content %}
 
 <div class="Texto_princial">
-<h2> hola buenas en esta instancia le presentamos esta pagina , un saludo!</h2>
+<h2> Hola buenas en esta instancia le presentamos esta pagina , un saludo!</h2>
 
 	
 
 <p> Buenvenido a nuestra pagina canabica, estamos felices que estes aqui</p>
 <p>Nuestra idea es que quien interesado pueda compartir sus plantas y proyectos</p>
 
-<p>esta es la plantilla html</p>
 
 
 </div>
 
+<br>
 
-<br>	
 <div class="Contenedor">
-	<img class="img" src="{% static 'image/Semilla.jpg' %}"  width="1100">
+	<img class="img" src="{% static 'image/Semilla.jpg' %}"  width="900" >
 	
 </div>
 
+<br>
+<hr>
+<br>
+<div> 
+	<section id="galeria">
+<header>
+    <h1>Por aqui le dejamos algunas plantas de nuestros Amigos en todo el Planeta!</h1>
+</header>
+</article>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis1.jpg' %}"  width="300" height="260"> <figcaption>1</figcaption>
+    </figure>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis2.jpg' %}"  width="300" height="260"> <figcaption>2</figcaption>
+    </figure>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis4.jpg' %}"  width="300" height="260"> <figcaption>4</figcaption>
+    </figure>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis5.jpg' %}"  width="300" height="260"> <figcaption>5</figcaption>
+    </figure>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis6.jpg' %}"  width="300" height="260"> <figcaption>6</figcaption>
+    </figure>
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis9.jpg' %}"  width="300" height="260"> <figcaption>9</figcaption>
+    </figure>
+ 
+ 	<figure>
+        <img class="img" src="{% static 'image/canabis10.jpg' %}"  width="300" height="260"> <figcaption>10</figcaption>
+    </figure>
+    <figure>
+        <img class="img" src="{% static 'image/canabis11.jpg' %}"  width="300" height="260"> <figcaption>11</figcaption>
+    </figure>
+    <figure>
+        <img class="img" src="{% static 'image/canabis12.jpg' %}"  width="300" height="260"> <figcaption>12</figcaption>
+    </figure>
+    <figure>
+        <img class="img" src="{% static 'image/canabis13.jpg' %}"  width="300" height="260"> <figcaption>13</figcaption>
+    </figure>
+ </article>
+</div>
 {% endblock %}
-

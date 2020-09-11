@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="Detalles_del_producto">
+
+	{% for product in products.all %}
+
+	<br>
+	<div class="titulo_producto"> {{ product.title }}</div>
+	<hr>
+	<br>
+	<div class="imagen_producto"> <img src="{{ product.image.url }}" width="640" height="480"></div>	
+	<br>
+	
+	<div class="Boton_producto"> 
+	<br>
+	<a href="javascript:{document.getElementById('upvote{{ product.id }}').submit()}"><button type="button" class="btn btn-primary"><samp class="oi oi-caret-top"></samp> Upvote {{ product.votes_total }}</button></a>
+
+	</div>
+
+	<br>
+
+	<p class="Nombre_Usuario"> Usuario del producto /// {{ product.hunter.username }} --- Fecha de publicacion /// {{ product.pub_date_pretty }} </p>
+	<p class="Contenido_publicacion">{{ product.body }}</p>
+	</div>
+	<br>
+	<form  id="upvote{{ product.id }}" method="POST" action="{% url 'upvote' product.id %}">
+	{% csrf_token %}
+	<input type="hidden">
+	<hr>
+	{% endfor %}
+
+</div>
+
+{% endblock %}

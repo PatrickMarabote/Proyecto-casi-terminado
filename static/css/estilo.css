@@ -1,3 +1,7 @@
+body{
+	background: #CCC;
+}
+
 
 .titulo{
 	background: #5E5C53;
@@ -40,12 +44,8 @@
 
 
 .Contenedor {
-	left: 15%;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	filter: drop-shadow(0px 0px 2px);
-
+	display: flex;
+  	justify-content: center;
 
 }
 
@@ -189,7 +189,7 @@
 	font-style: italic;
 	font-family:Verdana,  Geneva, sans-serif;
 	filter: drop-shadow(0px 0px 1px gray);
-	left: 76%;
+	left: 83%;
 	display: inline-block;
 }
 
@@ -212,7 +212,7 @@
 	position: absolute;
 	color:#1668C4;
 	text-decoration: none;
-	top: 30px;
+	top: 35px;
 	font-size: 15px;
 	padding: 0px 20px;
 	font-weight: bolder;
@@ -335,14 +335,17 @@ vertical-align: middle;
 	font-family: Verdana;
 }
 
+.ultimo1{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+
+}
 .ultimo {
 	position: relative;
-	text-align: center;
-	opacity: 75%;
-	left: 33%;
-	display: inline-block;
+	display: flex;
+  	justify-content: center;
 	background:#3FA7DB;
-	padding: 3px 10px;
 	margin-bottom: 4px;
 	letter-spacing: 7px;
 	transition-property:all;
@@ -352,10 +355,10 @@ vertical-align: middle;
 }
 
 .ultimo:hover {
-	text-align: center;
+	position: relative;
+	display: flex;
+  	justify-content: center;
 	opacity: 75%;
-	display: inline-block;
-	left: 33%;
 	background: #33596C;
 	margin-bottom: 4px;
 	letter-spacing: 7px;
@@ -375,4 +378,85 @@ left:8%;
 top:17%;
 border:15% outset #ccc;
 
+}
+
+
+.titulo_producto {
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+	font-family: Verdana;
+	font-size: 20px;
+	opacity: 75%;
+
+}
+.Nombre_Usuario {
+	text-align: center;
+	padding: 1%;
+	margin: 1%;
+	background: #76BDE9;
+	font-family:Verdana;
+
+}
+
+
+.Contenido_publicacion{
+	text-align: center;
+	background: #76BDE9;
+	padding: 1%;
+	margin: 1%;
+	font-family:Verdana;
+
+
+}
+
+.Boton_producto {
+	text-align: center;
+}
+
+.Boton_producto a {
+	text-align: center;
+	padding: 0.5%;
+	margin: 0.5%;
+	font-family: Verdana;
+	font-size: 19px
+	opacity: 75%;
+	text-decoration: none;
+	color: #0B1A20;
+}
+
+.Boton_producto a:hover {
+	text-align: center;
+	opacity: 75%;
+	transition-property: all;
+	transition-duration: 0.1s;
+	font-size: 17px;
+	transition-timing-function: linear;
+	color: #75A5B8;
+	text-decoration: none;
+}
+
+
+.imagen_producto {
+	display: flex;
+  	justify-content: center;
+  	border-radius: 30px;
+  	filter: drop-shadow(0px 0px 10px);
+
+
+}
+
+
+
+#galeria {
+            margin: 1rem auto;
+            width:100%;
+            max-width:960px;
+            column-count: 3;
+        }
+
+
+
+.informacion {
+	text-align: center;
 }

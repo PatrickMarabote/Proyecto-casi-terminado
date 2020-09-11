@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title> Pagina Canabica</title>
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/estilo1.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}">
 </head>
 
@@ -17,8 +17,8 @@
 <div class="titulo">
 <p> Canabis.UY </P>
 	<div class="uno"> <a href="{% url 'home' %}"> Inicio</a></div>
-	<div class="dos"> <a href="#"> Nosotros</a></div>
-	<div class="tres"> <a href="#"> Imagenes</a></div>
+	<div class="dos"> <a href="{% url 'nosotros' %}"> Nosotros</a></div>
+	<div class="tres"> <a href="{% url 'imagenes' %}"> Imagenes</a></div>
 
 
 
@@ -77,6 +77,10 @@
 <br>
 </div>
 {% endblock %}
+<br>
+<br>
+
+<br>
 
 <div class="ultimo">
 <footer> Pagina Canabica 2020 Proyect Bios © </footer>

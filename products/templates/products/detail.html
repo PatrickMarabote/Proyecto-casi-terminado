@@ -1,3 +1,35 @@
- {{ product.title }}
+{% extends 'base.html' %}
+{% load static %}
 
- hola esta es la pagiona
+{% block content %}
+
+
+
+<div class="titulo_producto"> {{ product.title }}</div>
+
+
+<div class="imagen_producto"> <img src="{{ product.image.url }}" width="900"></div>	
+<br>
+<hr>	
+<div class="Boton_producto"> 
+
+<a href="javascript:{document.getElementById('upvote').submit()}"><button type="button" class="btn btn-primary"><samp class="oi oi-caret-top"></samp> Upvote {{ product.votes_total }}</button></a>
+
+</div>
+
+<br>
+<hr>
+<p class="Nombre_Usuario"> Usuario del producto /// {{ product.hunter.username }} --- Fecha de publicacion /// {{ product.pub_date_pretty }} </p>
+<p class="Contenido_publicacion">{{ product.body }}</p>
+
+<form  id="upvote" method="POST" action="{% url 'upvote' product.id %}">
+{% csrf_token %}
+<input type="hidden">
+</form>
+<hr>
+
+	</div>
+	</div>
+	<br>
+
+{% endblock %}
